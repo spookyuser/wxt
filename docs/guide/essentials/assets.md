@@ -91,6 +91,7 @@ First, we need to copy the `.wasm` file to the output directory. We'll do it wit
 ```ts
 // modules/oxc-parser-wasm.ts
 import { resolve } from 'node:path';
+import { defineWxtModule } from "wxt/modules"
 
 export default defineWxtModule((wxt) => {
   wxt.hook('build:publicAssets', (_, assets) => {
